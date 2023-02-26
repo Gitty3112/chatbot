@@ -34,7 +34,7 @@ function App() {
     // console.log({question})
     setLoading(true);
     axios
-      .post("https://chatbot-server-090w.onrender.com/chat", {
+      .post("https://chatbot-server-9l4u.onrender.com/chat", {
         question,
       })
       .then((response) => {
@@ -276,13 +276,13 @@ function App() {
           <div class="col-12 col-md-7 col-lg-7">
             <div class="container">
               <div>
-                <img
+                {/* <img
                   src={webLogo}
                   alt=""
                   width="200px"
                   height="50px"
                   // class="avtar"
-                />
+                /> */}
                 <div class="chats" id="chats">
                   {qna.map((qna) => {
                     if (qna.from == YOU) {
